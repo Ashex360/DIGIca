@@ -1,0 +1,133 @@
+.home-content{
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #f9f9f9, #e0e7ff);
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Container styling */
+.container {
+    background: linear-gradient(120deg, #f9f9f9, #e0e7ff);
+    border-radius: 10px;
+    margin-left:250px;
+    margin-top: 40px;
+    text-align: center;
+    height:auto;
+}
+
+.header h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Adds spacing between buttons */
+    flex-wrap: wrap; /* Ensures buttons wrap if the screen is too small */
+}
+
+.buttons a {
+    font-size: 20px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    color: #5b087975; /* Text color */
+    margin-top: 20px; /* Space between the image and text */
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    width: 130px; /* Adjust size */
+    height: 150px; /* Equal width and height for a circle */
+    border-radius: 20%; /* Makes it circular */
+    overflow: hidden; /* Ensures content stays inside the circle */
+    background-color: #f5f5f5; /* Background color (fallback) */
+    box-shadow: 0 4px 6px rgba(221, 4, 210, 0.333); /* Add shadow for depth */
+    text-align: center; /* Centers content */
+    margin: 0 auto; /* Center the button */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    position: relative; /* Needed to position text */
+}
+
+        /* Style for the image inside */
+.btn img {
+    width: 100%; /* Image fills the circle */
+    height: 100%; /* Image fills the circle */
+    object-fit: cover; /* Maintains aspect ratio */
+}
+
+/* Style for hover effect */
+.btn:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(228, 9, 199, 0.4); /* Stronger shadow */
+}
+.btn:focus {
+    outline: none;
+    border-color: #007BFF; /* Highlight border on focus */
+}
+/* Style for the button text */
+.btn button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: rgb(239, 29, 204);
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn button:hover {
+    background-color: #0056b3;
+}
+.transparent-bg {
+    background-color: rgba(155, 8, 162, 0.5); /* Black with 50% transparency */
+    padding: 20px;
+    border-radius: 10px; /* Optional for rounded corners */
+    width: 100%;
+    text-align: center;
+    font-size: 8px;
+    color:rgb(242, 236, 243);
+    bottom:0;
+    margin-bottom:0%;
+}
+@media (max-width: 768px) {
+    .home-content{
+        height: auto;
+        padding: 20px;
+        justify-content:center;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(120deg, #f9f9f9, #e0e7ff);
+        color: #333;
+        font-family: Arial, sans-serif;
+    }
+    
+    /* Container styling */
+    .container {
+        background: linear-gradient(120deg, #f9f9f9, #7f07d592);
+        border-radius: 10px;
+        margin-left:70px;
+        margin-top: 40px;
+        text-align: center;
+        height:auto;
+    }
+}
